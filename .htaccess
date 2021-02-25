@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond $1 !^(index\.php|css|user_guide|.+\.PNG$|.+\.GIF$|.+\.JPG$|.+\.gif$|.+\.jpg$|.+\.eot|.+\.woff$|.+\.woff2$|.+\.ttf$|.+\.scss$|.+\.png$|.+\.mp3$|.+\.ico$|.+\.svg$|.+\.swf$|.+\.js$)
+RewriteRule ^(.+)$ index.php/$1 [L]
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
+php_value max_input_vars 10000
+
+

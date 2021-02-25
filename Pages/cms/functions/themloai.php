@@ -1,8 +1,7 @@
 <?php 
-    //var_dump($_POST);
     // khi submit
     if(isset($_POST["save"])){
-// them vao database
+    // them vao database
     $loai = $_POST["Loai"];
     $loai["HinhAnh"] = "";
     // có hinh 
